@@ -7,7 +7,7 @@ import eight8 from "../assets/numbers/eight8.png"
 const Section7 = () => {
     return (
         <section className="relative bg-black">
-            <div className="max-w-[1350px] mx-auto text-white px-5 pt-20 sm:pt-24">
+            <div className="max-w-[1350px] mx-auto text-white px-5 py-20 sm:pt-24">
                 <div>
                     <div className="text-center mb-7 sm:mb-12">
                         <p className="text-[12px] sm:text-[20px] font-inter uppercase bg-gradient-to-b from-[#FFF540] to-[#FFFBBC] bg-clip-text text-transparent">Step Eight</p>

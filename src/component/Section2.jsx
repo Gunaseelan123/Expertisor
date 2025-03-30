@@ -1,7 +1,6 @@
 import React from 'react'
-import creaters from "../assets/creaters.png"
-import group_frame from "../assets/group_frame.png"
-// import Card from './Card';
+import creators1 from "../assets/creators_Desk.png"
+import creators2 from "../assets/creators_mob.png"
 import round from "../assets/round.png"
 import img1 from "../assets/img1.png"
 import img3 from "../assets/img3.png"
@@ -16,10 +15,6 @@ import img8 from "../assets/img8.png"
 
 const Section2 = () => {
 
-    // const courses = [
-    //     { title: "IT Foundation Course", description: "Full stack, DevOps, Cloud computing, AI/ML etc.", image: "/images/it-foundation.jpg"},
-
-    // ];
 
     const data = [
         {
@@ -27,13 +22,13 @@ const Section2 = () => {
         before:content-[' '] before:absolute before:inset-0 
         before:bg-[radial-gradient(50%_50%_at_50%_50%,rgba(255,242,0,0.3)_0%,rgba(255,242,0,0)_100%)]
         before:z-0 before:rounded-2xl rounded-2xl shadow-lg text-white h-[165px] sm:h-[300px]` },
-        { img: round, title: "Technology Courses", description: "Title description - Explanation of this", colSpan: "col-span-1 sm:col-span-1 lg:col-span-1 bg-[#141300] border border-[#494900] h-[200px] sm:h-[300px]" },
-        { img: img3, title: "Career Guidance", description: "Title description - Explanation of this", colSpan: "col-span-1 sm:col-span-1 lg:col-span-1 bg-[#141300] border border-[#494900] h-[200px] sm:h-[300px]" },
-        { img: img4, title: "Tech Meetups", description: "Title description - Explanation of this", colSpan: "col-span-2 sm:col-span-1 lg:col-span-1 bg-[#141300] border border-[#494900] h-[165px] sm:h-[300px]" },
-        { img: img5, title: "Workshops", description: "Title description - Explanation of this", colSpan: "col-span-1 sm:col-span-1 lg:col-span-1  bg-[#141300] border border-[#494900] h-[185px] sm:h-[300px] relative before:content-[''] before:absolute before:inset-0 before:bg-[radial-gradient(47.33%_47.33%_at_72.15%_0%,rgba(255,242,0,0.2)_0%,rgba(255,242,0,0)_100%)] before:z-0 before:rounded-2xl" },
-        { img: img6, title: "Hackathons", description: "Title description - Explanation of this", colSpan: "col-span-1 sm:col-span-1 lg:col-span-2 bg-[#141300] border border-[#494900] h-[185px] sm:h-[300px]" },
-        { img: img7, title: "Internship Opportunities", description: "Title description - Explanation of this", colSpan: "col-span-2 sm:col-span-1 lg:col-span-2 bg-[#141300] border border-[#494900] h-[165px] sm:h-[300px]" },
-        { img: img8, title: "Completion & Certification", description: "Title description - Explanation of this", colSpan: "col-span-2 sm:col-span-1 lg:col-span-2 bg-[#141300] border border-[#494900] h-[165px] sm:h-[300px]" }
+        { img: round, title: "Technology Courses", description: "Master In-Demand Tech Skills Efficiently", colSpan: "col-span-1 sm:col-span-1 lg:col-span-1 bg-[#141300] border border-[#494900] h-[200px] sm:h-[300px]" },
+        { img: img3, title: "Career Guidance", description: "Navigate Your Career with Confidence", colSpan: "col-span-1 sm:col-span-1 lg:col-span-1 bg-[#141300] border border-[#494900] h-[200px] sm:h-[300px]" },
+        { img: img4, title: "Tech Meetups", description: "Connect, Learn, and Grow Together", colSpan: "col-span-2 sm:col-span-1 lg:col-span-1 bg-[#141300] border border-[#494900] h-[165px] sm:h-[300px]" },
+        { img: img5, title: "Workshops", description: "Hands-On Learning for Real-World Skills", colSpan: "col-span-1 sm:col-span-1 lg:col-span-1  bg-[#141300] border border-[#494900] h-[185px] sm:h-[300px] relative before:content-[''] before:absolute before:inset-0 before:bg-[radial-gradient(47.33%_47.33%_at_72.15%_0%,rgba(255,242,0,0.2)_0%,rgba(255,242,0,0)_100%)] before:z-0 before:rounded-2xl" },
+        { img: img6, title: "Hackathons", description: "Innovate, Compete, and Solve Challenges", colSpan: "col-span-1 sm:col-span-1 lg:col-span-2 bg-[#141300] border border-[#494900] h-[185px] sm:h-[300px]" },
+        { img: img7, title: "Internship Opportunities", description: "Gain Experience, Build Your Future", colSpan: "col-span-2 sm:col-span-1 lg:col-span-2 bg-[#141300] border border-[#494900] h-[165px] sm:h-[300px]" },
+        { img: img8, title: "Completion & Certification", description: "Earn Recognized Certificates for Success", colSpan: "col-span-2 sm:col-span-1 lg:col-span-2 bg-[#141300] border border-[#494900] h-[165px] sm:h-[300px]" }
     ];
 
 
@@ -44,8 +39,8 @@ const Section2 = () => {
                 <div>
                     <div>
                         <div>
-                            <img width={"100%"} src={creaters} alt="" className="hidden sm:block" />
-                            <img width={"100%"} src={group_frame} alt="" className="block sm:hidden" />
+                            <img width={"100%"} src={creators1} alt="" className="hidden sm:block" />
+                            <img width={"100%"} src={creators2} alt="" className="block sm:hidden" />
                         </div>
                     </div>
                     <div className='mt-12 sm:mt-24 mb-9'>

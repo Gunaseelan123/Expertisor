@@ -1,23 +1,22 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState,useEffect,useRef } from 'react'
 import enroll from "../assets/enroll.png"
 import right_arrow from "../assets/right_arrow.png"
 import Union from "../assets/Union.png"
 import download from "../assets/download.png"
 import embed from "../assets/embed.png"
 import deegre from "../assets/deegre.png"
-import intern from "../assets/intern.png"
 
 const SectionIntro = () => {
+    const videos = {
+        id: 1,
+        url: "https://www.youtube.com/embed/v02U7mvaIvk",
+        thumbnail: "https://img.youtube.com/vi/v02U7mvaIvk/hqdefault.jpg"
+    };
 
-    const [playing, setPlaying] = useState(null);
-    const videos = { 
-          id: 1, 
-          url: "https://www.youtube.com/embed/v02U7mvaIvk", 
-          thumbnail: "https://img.youtube.com/vi/v02U7mvaIvk/hqdefault.jpg" 
-        }
-      ;
-    
+    const [playing, setPlaying] = useState(false);
+
+
     return (
         <section className=' bg-[radial-gradient(83.9%_46.38%_at_50%_0%,_#FFFFFF_0%,_#FFF200_100%)]'>
 
@@ -47,13 +46,13 @@ const SectionIntro = () => {
                             <span className='md:block'> Paying IT Career?</span>
                         </h1>
 
-                        <p className="  mt-3 mb-5 sm:mb-0 sm:mt-4 font-inter font-normal text-[16px] sm:text-[24px] leading-none tracking-normal text-center ">1-Year Program with directly from Tamil Nadu's top tech creators mentors!</p>
+                        <p className="  mt-3 mb-5 sm:mb-0 sm:mt-4 font-inter font-normal text-[16px] sm:text-[24px] leading-snug tracking-normal text-center ">1-Year Program with directly from Tamil Nadu's top tech creators mentors!</p>
 
                         <div className=' hidden sm:flex justify-center gap-4 mt-8 mb-10 lg:mb-14'>
                             <div className='flex justify-center '>
                                 <div className='flex justify-center items-center  w-[171px] h-[56px] rounded-[8px]  bg-[radial-gradient(99.88%_99.88%_at_53.29%_100.71%,_#6D6100_0%,_#000000_100%)] border border-[#B6AC00]'>
                                     <div className="flex gap-3 items-center">
-                                        <a href="" className='font-inter font-semibold text-[16px] text-[#FFF201] leading-[100%] tracking-[0%] align-middle'>Join Now</a>
+                                        <a href="https://www.expertisoracademy.in/courses/MasterTech-1-Year-Mentorship-Program-1735308892432-676eb65c9f0f402d2004afae" className='font-inter font-semibold text-[16px] text-[#FFF201] leading-[100%] tracking-[0%] align-middle'>Join Now</a>
                                         <img src={right_arrow} alt="" />
                                     </div>
                                 </div>
@@ -79,15 +78,14 @@ const SectionIntro = () => {
 
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <div className="bg-black/50 p-2 sm:p-3 lg:p-4 rounded-full">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-5 h-5 sm:w-9 sm:h-9 lg:w-12 lg:h-12">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-12 h-12">
                                                 <path d="M8 5v14l11-7z" />
                                             </svg>
                                         </div>
                                     </div>
                                 </div>
                             ) : (
-                                <iframe className="absolute top-0 left-0 w-full h-full rounded-3xl" src="https://www.youtube.com/embed/v02U7mvaIvk?autoplay=1&modestbranding=1&showinfo=0&controls=0&rel=0&disablekb=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" ></iframe>
-
+                                <iframe className="absolute top-0 left-0 w-full h-full rounded-3xl" src="https://www.youtube.com/embed/v02U7mvaIvk?autoplay=1&modestbranding=1&showinfo=0&controls=1&rel=0&disablekb=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" ></iframe>
                             )}
                         </div>
                     </div>

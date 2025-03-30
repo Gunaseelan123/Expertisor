@@ -11,6 +11,10 @@ import Section5 from './component/Section5';
 import Section6 from './component/Section6';
 import Section7 from './component/Section7';
 import Aboutus from './component/Aboutus';
+import StudReview from './component/StudReview';
+import tick from "./assets/tick.png"
+import Whatsapp from './component/Whatsapp';
+import Footer from './component/Footer';
 
 
 function App() {
@@ -25,7 +29,11 @@ function App() {
       <Section5/>
       <Section6/>
       <Section7/>
+      <StudReview/>
       <Aboutus/>
+      <Footer/>
+      <Whatsapp/>
+
     </div>  
   )
 }

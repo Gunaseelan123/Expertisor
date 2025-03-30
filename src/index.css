@@ -3,23 +3,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@plugin "daisyui";
-  
-*{
-  box-sizing: border-box;
+
+.wrapper::-webkit-scrollbar{
+    margin-top: 20px;
+    height:8px
 }
-  
-/* .iframe-container{
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; 
-  height: 0
-} */
-  
-/* .iframe-container iframe{
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
+
+.wrapper::-webkit-scrollbar-track{
+    background: gray;
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+
+.wrapper::-webkit-scrollbar-thumb{
+    background:rgb(223, 232, 205);
+    border-radius: 100vw;
+}
+

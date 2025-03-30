@@ -31,8 +31,8 @@ const Section5 = () => {
                         </div>
                     </div>
                     <div className=''>
-                        <ImgRun datas={slide1} dirc="right" speed="60" />
-                        <ImgRun datas={slide2} dirc="left" speed="60" />
+                        <ImgRun datas={slide1} dirc="right" speed="60" m="mb-5" h="h-[200px] sm:h-[247px]"/>
+                        <ImgRun datas={slide2} dirc="left" speed="60" m="mb-0" h="h-[200px] sm:h-[247px]"/>
                     </div>
                 </div>
             </div>

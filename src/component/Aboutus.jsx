@@ -58,10 +58,13 @@ const Aboutus = () => {
                                 </div>
                             </div>
                             <div className="flex flex-col gap-6 ">
-                                <p className="text-[14px] sm:text-[16px]">Once upon a time in the bustling city of Innovatech, there lived a young entrepreneur named Alex. With a passion for technology and a vision to change the world, Alex spent countless nights coding in a small apartment filled with gadgets and dreams. One day, while sipping coffee at a local cafe, an idea struck: a revolutionary app that could connect people with similar interests in real-time.</p>
-                                <p className="text-[14px] sm:text-[16px]">Determined to bring this idea to life, Alex gathered a team of like-minded friends, each with their own unique skills. Together, they worked tirelessly, facing challenges and setbacks, but their camaraderie kept them motivated. After months of hard work, they finally launched their app, "Connectify."</p>
-                                <p className="text-[14px] sm:text-[16px]">The app quickly gained popularity, transforming the way people interacted and formed communities. Alex's innovative approach not only brought success but also inspired others in Innovatech to pursue their own tech dreams. With a heart full of gratitude, Alex realized that the journey was just as important as the destination, and the true reward was the impact made on people's lives.</p>
-                                <p className="text-[14px] sm:text-[16px]">Once upon a time in the bustling city of Innovatech, there lived a young entrepreneur named Alex. With a passion for technology and a vision to change the world, Alex spent countless nights coding in a small apartment filled with gadgets and dreams. One day, while sipping coffee at a local café, an idea struck: a revolutionary app that could connect people with similar interests in real-time.</p>
+                                <p className="text-[14px] sm:text-[16px]">We saw the gap—education teaches, but reality demands more. Today, learning goes beyond classrooms, with YouTubers making complex topics simple.</p>
+
+                                <p className="text-[14px] sm:text-[16px]">So, we built Expertisor Academy—where friendly creators become mentors, making quality learning accessible to everyone.</p>
+
+                                <p className="text-[14px] sm:text-[16px]">We're on a mission to impact 1 million students’ lives.</p>
+
+                                <p className="text-[14px] sm:text-[16px]">Our Philosophy: Top-quality education should be affordable and driven by value. Money is a by-product of creating real impact</p>
 
                             </div>
                         </div>
