@@ -1,8 +1,8 @@
 import React from 'react'
-import fullstack from "../assets/fullstack.png"
 import Union from "../assets/Union.png"
 import Buttons from './Buttons'
 import one1 from "../assets/numbers/one1.png"
+import tamil from "../assets/tamil.png"
 
 const FullStack = () => {
     return (
@@ -21,7 +21,7 @@ const FullStack = () => {
 
                 </div>
                 <div className=' mt-7 sm:mt-8'>
-                    <img width={"100%"} src={fullstack} alt="" />
+                    <img width={"100%"} src={tamil} alt="" />
                 </div>
             </div>
             <div>

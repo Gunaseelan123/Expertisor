@@ -28,7 +28,7 @@ const SectionIntro = () => {
                         <div className='flex justify-center'>
                             <div className=' flex  gap-2 items-center rounded-[8px] border border-[#C9BC5F] py-[6px] px-[8.5px] sm:p-[8.5px]'>
                                 <img src={enroll} alt="" />
-                                <p className='font-inter font-normal text-[12px] sm:text-[16px] leading-[100%] tracking-[0%] text-center'>500+ students already enrolled</p>
+                                <p className='font-inter font-normal text-[12px] sm:text-[16px] leading-[100%] tracking-[0%] text-center'>1352+ students already enrolled</p>
                             </div>
 
                         </div>
@@ -40,7 +40,6 @@ const SectionIntro = () => {
                         </div>
 
 
-
                         <h1 className="  mt-3  sm:mt-3 font-inter font-bold text-[28px] sm:text-[50px] md:text-[64px]  leading-tight tracking-[0%] text-centermt-6 bg-gradient-to-b from-black to-[#817200] bg-clip-text text-transparent">
                             <span className='md:block'>Ready to Build a High</span>
                             <span className='md:block'> Paying IT Career?</span>
@@ -49,22 +48,23 @@ const SectionIntro = () => {
                         <p className="  mt-3 mb-5 sm:mb-0 sm:mt-4 font-inter font-normal text-[16px] sm:text-[24px] leading-snug tracking-normal text-center ">1-Year Program with directly from Tamil Nadu's top tech creators mentors!</p>
 
                         <div className=' hidden sm:flex justify-center gap-4 mt-8 mb-10 lg:mb-14'>
-                            <div className='flex justify-center '>
+                            <a href="https://www.expertisoracademy.in/courses/MasterTech-1-Year-Mentorship-Program-1735308892432-676eb65c9f0f402d2004afae" className='flex justify-center cursor-pointer'>
                                 <div className='flex justify-center items-center  w-[171px] h-[56px] rounded-[8px]  bg-[radial-gradient(99.88%_99.88%_at_53.29%_100.71%,_#6D6100_0%,_#000000_100%)] border border-[#B6AC00]'>
                                     <div className="flex gap-3 items-center">
-                                        <a href="https://www.expertisoracademy.in/courses/MasterTech-1-Year-Mentorship-Program-1735308892432-676eb65c9f0f402d2004afae" className='font-inter font-semibold text-[16px] text-[#FFF201] leading-[100%] tracking-[0%] align-middle'>Join Now</a>
+                                        <p className='font-inter font-semibold text-[16px] text-[#FFF201] leading-[100%] tracking-[0%] align-middle'>Join Now</p>
                                         <img src={right_arrow} alt="" />
                                     </div>
                                 </div>
-                            </div>
-                            <div className='flex justify-center'>
+                            </a>
+
+                            <a href="" className='flex justify-center cursor-pointer'>
                                 <div className='mt-4 sm:mt-0 flex justify-center items-center border rounded-[4px] border-[#B6AC00] bg-[#FFF761] w-[246px] h-[56px]'>
                                     <div className="flex gap-3 items-center">
-                                        <a href="" className='font-inter font-semibold text-black  text-[16px] leading-[100%] tracking-[0%] align-middle'>Download Brochure</a>
+                                        <p  className='font-inter font-semibold text-black  text-[16px] leading-[100%] tracking-[0%] align-middle'>Download Brochure</p>
                                         <img src={download} alt="" />
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 

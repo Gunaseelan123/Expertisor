@@ -1,57 +1,28 @@
 import React from 'react'
 import ImgRun from './ImgRun'
 import swi1 from "../assets/swi/swi1.jpeg"
-import day1 from "../assets/day-1.mp4"
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Play, Pause } from "lucide-react";
+import {stud} from "../assets/Meetup"
 
 
 
 const StudReview = () => {
 
-    const images = [
-        swi1,
-        swi1,
-        swi1,
-        swi1,
-        swi1,
-        swi1,
-        swi1,
-        swi1,
-        swi1,
-        swi1,
-    ]
+    const [playingVideo, setPlayingVideo] = useState(null);
 
-    const videoSources = [
-        day1,
-        day1,
-        day1,
-        day1,
-        day1,
-        day1,
 
-    ]
 
-    const videoRefs = useRef([]); 
-    const [playingIndex, setPlayingIndex] = useState(null); 
+    const videos = [
+        { id: 1, url: "https://www.youtube.com/embed/vLlD6MxPGGM", thumbnail: "https://img.youtube.com/vi/vLlD6MxPGGM/maxresdefault.jpg"},
+        { id: 2, url: "https://www.youtube.com/embed/mCkZBuY8G3k", thumbnail: "https://img.youtube.com/vi/mCkZBuY8G3k/maxresdefault.jpg" },
+        { id: 3, url: "https://www.youtube.com/embed/0byxBZjb7DA", thumbnail: "https://img.youtube.com/vi/0byxBZjb7DA/maxresdefault.jpg"},
+        { id: 4, url: "https://www.youtube.com/embed/_AFxkykDCzo", thumbnail: "https://img.youtube.com/vi/_AFxkykDCzo/maxresdefault.jpg"},
+        { id: 5, url: "https://www.youtube.com/embed/olgqBQ1cNuk", thumbnail: "https://img.youtube.com/vi/olgqBQ1cNuk/maxresdefault.jpg"},
+    ];
 
-    const handlePlayPause = (index) => {
-        if (videoRefs.current[index]) {
-            if (playingIndex === index) {
-                videoRefs.current[index].pause();
-                setPlayingIndex(null);
-            } else {
-                videoRefs.current.forEach((video, i) => {
-                    if (video && i !== index) {
-                        video.pause();
-                    }
-                });
 
-                videoRefs.current[index].play();
-                setPlayingIndex(index);
-            }
-        }
-    };
+
 
 
 
@@ -67,40 +38,54 @@ const StudReview = () => {
                         </p>
                     </div>
 
-                    <div className="py-10">
-                        <ImgRun datas={images} dirc="left" speed="60" m="mb-0" h="h-[200px] " />
+                    <div className="py-5 sm:py-10">
+                        <ImgRun datas={stud} dirc="left" speed="120" m="mb-0" h="h-[200px] " />
                     </div>
 
-                    <div className="max-w-[1350px] mx-auto  ">
 
 
-                        <div className="wrapper flex gap-5 overflow-x-scroll">
-                            {videoSources.map((src, index) => (
-                                <div
-                                    key={index}
-                                    className="relative border-[8px] border-white rounded-md min-w-[330px] sm:min-w-[500px] mb-5"
-                                >
-                                    <video
-                                        ref={(el) => (videoRefs.current[index] = el)}
-                                        className="w-full h-auto"
-                                        src={src}
-                                    ></video>
-
-                                    <button
-                                        onClick={() => handlePlayPause(index)}
-                                        className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-50 transition duration-300"
-                                    >
-                                        {playingIndex === index ? (
-                                            <Pause size={50} className="text-white" />
+                    <div className="max-w-[1350px] mx-auto">
+                        <div className="wrapper flex gap-5 overflow-x-scroll whitespace-nowrap">
+                            {videos.map((video) => (
+                                <div key={video.id} className="relative min-w-[300px] sm:w-full mb-5 ">
+                                    <div className="relative w-full pt-[100%]">
+                                        {playingVideo !== video.id ? (
+                                            <div
+                                                className="absolute inset-0 cursor-pointer"
+                                                onClick={() => setPlayingVideo(video.id)}
+                                            >
+                                                <img
+                                                    src={video.thumbnail}
+                                                    alt="Video Thumbnail"
+                                                    className="absolute inset-0 w-full h-full object-cover rounded-t-lg"
+                                                />
+                                                <div className="absolute inset-0 flex items-center justify-center">
+                                                    <div className="bg-black/50 p-2 sm:p-3 lg:p-4 rounded-full">
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 24 24"
+                                                            fill="white"
+                                                            className="w-12 h-12"
+                                                        >
+                                                            <path d="M8 5v14l11-7z" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         ) : (
-                                            <Play size={50} className="text-white" />
+                                            <iframe
+                                                className="absolute inset-0 w-full h-full rounded-t-lg"
+                                                src={`${video.url}?autoplay=1&modestbranding=1&showinfo=0&controls=0&rel=0&disablekb=1`}
+                                                title="YouTube video player"
+                                                frameBorder="0"
+                                                allow="autoplay; encrypted-media; picture-in-picture"
+                                                allowFullScreen
+                                            ></iframe>
                                         )}
-                                    </button>
+                                    </div>
                                 </div>
                             ))}
                         </div>
-
-
                     </div>
 
                 </div>

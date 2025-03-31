@@ -6,11 +6,11 @@ import seaven7 from "../assets/numbers/seaven7.png"
 const Section6 = () => {
 
     const para = [
-        "Enroll in the course to secure your spot for the internship opportunity!",
-        "Finish all the courses without leaving anything hanging!",
-        "Make sure that you complete the assessment test with a score of at least 70%.",
-        "After you’ve passed the assessment, you’re now eligible to join the internship.",
-        "We'll send you more info about the internship in an email!",
+        "Enroll in this initiative program to secure your spot for the internship opportunity!",
+        "Complete all the courses without leaving any module unfinished.",
+        "A basic screening will be conducted to verify that you have completed all modules.",
+        "After passing the screening call, you’ll be eligible to join the internship.",
+        "You’ll receive an email with more details, including your official internship offer letter!",
     ]
     return (
         <section className="relative bg-black">

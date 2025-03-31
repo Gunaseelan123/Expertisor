@@ -1,20 +1,36 @@
 import React from 'react'
 import ImgRun from './ImgRun'
-import img1 from "../assets/img1.png"
-import img3 from "../assets/img3.png"
-import sli1 from "../assets/loop/sli1.png"
-import sli2 from "../assets/loop/sli2.png"
-import sli3 from "../assets/loop/sli3.png"
-import sli4 from "../assets/loop/sli4.png"
-import sli5 from "../assets/loop/sli5.png"
-import sli6 from "../assets/loop/sli6.png"
-import sli7 from "../assets/loop/sli7.png"
 import Union from "../assets/Union.png"
 import six6 from "../assets/numbers/six6.png"
 
-const slide1 = [sli1, sli2, sli3, sli4]
+import {imges} from "../assets/Meetup" 
 
-const slide2 = [sli5, sli6, sli7, sli2, sli3, sli4]
+const slide1 = [
+    imges.a,
+    imges.b,
+    imges.c,
+    imges.d,
+    imges.e,
+    imges.f,
+    imges.g,
+    imges.h,
+    imges.i,
+    imges.j,
+]
+
+const slide2 = [
+    imges.k,
+    imges.l,
+    imges.m,
+    imges.n,
+    imges.o,
+    imges.p,
+    imges.q,
+    imges.r,
+    imges.s,
+    imges.t,
+
+]
 
 
 

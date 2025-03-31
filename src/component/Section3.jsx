@@ -10,10 +10,10 @@ import { FaChevronLeft,FaChevronRight } from "react-icons/fa"
 
 const Section3 = () => {
   const videos = [
-    { id: 1, url: "https://www.youtube.com/embed/sh-oVBhdKfw", thumbnail: "https://img.youtube.com/vi/sh-oVBhdKfw/maxresdefault.jpg" },
-    { id: 2, url: "https://www.youtube.com/embed/GKPxr9vA0eY", thumbnail: "https://img.youtube.com/vi/l37o8odjSD4/maxresdefault.jpg" },
-    { id: 3, url: "https://www.youtube.com/embed/sh-oVBhdKfw", thumbnail: "https://img.youtube.com/vi/sh-oVBhdKfw/maxresdefault.jpg" },
-    { id: 4, url: "https://www.youtube.com/embed/szgkqIlkMGA", thumbnail: "https://img.youtube.com/vi/szgkqIlkMGA/maxresdefault.jpg" }
+    { id: 1, url: "https://www.youtube.com/embed/sh-oVBhdKfw", thumbnail: "https://img.youtube.com/vi/sh-oVBhdKfw/maxresdefault.jpg",course:"Full Stack Development" },
+    { id: 2, url: "https://www.youtube.com/embed/GKPxr9vA0eY", thumbnail: "https://img.youtube.com/vi/l37o8odjSD4/maxresdefault.jpg",course:"AWS" },
+    { id: 3, url: "https://www.youtube.com/embed/aYjtkMv7Iuw", thumbnail: "https://img.youtube.com/vi/aYjtkMv7Iuw/maxresdefault.jpg",course:"Linux Admin" },
+    { id: 4, url: "https://www.youtube.com/embed/szgkqIlkMGA ", thumbnail: "https://img.youtube.com/vi/szgkqIlkMGA/maxresdefault.jpg",course:"VMware vSphere" }
   ];
   
   
@@ -103,7 +103,7 @@ const Section3 = () => {
                         <img src={video.thumbnail} alt="Video Thumbnail" className="max-w-full h-full object-cover rounded-t-lg" />
 
                         <div className="absolute bottom-0 left-0  bg-[#FFCC00] text-white rounded-sm px-2 py-1 sm:px-3 sm:py-2  lg:px-4 lg:py-3 text-center   ">
-                          <p className="font-inter sm:font-normal  lg:font-medium text-[10px] sm:text-[12px] lg:text-[14px] leading-[100%] tracking-[0%] align-middle">Full Stack Development</p>
+                          <p className="font-inter sm:font-normal  lg:font-medium text-[10px] sm:text-[12px] lg:text-[14px] leading-[100%] tracking-[0%] align-middle">{video.course}</p>
                         </div>
 
                         <div className="absolute top-0 right-0 bg-[#C10000] text-white rounded-sm rounded-tr-lg  px-2 py-1 sm:px-3 sm:py-2  lg:px-4 lg:py-3    text-center truncate  ">

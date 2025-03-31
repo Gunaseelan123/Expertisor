@@ -83,7 +83,7 @@ const Infinite = () => {
         },
         {
             para: "It was quite insightful. I got some clear ideas in building a proper IT portfolio and in finding the best way for company search(job switching in less than a year bcz of a situation). Glad you guided me in my downtime.",
-            name: "Anonymous",
+            name: "Sam",
             course: "Full stack developer",
         },
         

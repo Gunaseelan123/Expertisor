@@ -32,7 +32,10 @@ function App() {
       <StudReview/>
       <Aboutus/>
       <Footer/>
-      <Whatsapp/>
+
+      {/* <Whatsapp/> */}
+
+      
 
     </div>  
   )

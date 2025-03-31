@@ -8,6 +8,7 @@ import add from "../assets/add.png"
 import remove from "../assets/remove.png"
 import { useState } from 'react'
 import twos from "../assets/twos.png"
+import raghav from "../assets/raghavsir.jpg"
 
 const Aboutus = () => {
     const query = [
@@ -32,10 +33,10 @@ const Aboutus = () => {
 
     const faqs = [
         { question: "How can I join the 1-Year Program?", answer: "Click the 'Join Now' button, complete your payment, and you'll receive an email with all the program details, including access to videos, the app, website, and community links." },
-        { question: "What are the benefits of this program?", answer: "You'll gain access to exclusive learning materials, expert guidance, and a supportive community." },
-        { question: "Can I cancel my subscription?", answer: "Yes, you can cancel anytime before the next billing cycle without any penalties." },
-        { question: "Why are you charging only ₹700?", answer: "Yes, you can cancel anytime before the next billing cycle without any penalties." },
-        { question: "Will I get a certificate?", answer: "Yes, you can cancel anytime before the next billing cycle without any penalties." },
+        { question: "Can I ask questions?", answer: "Absolutely! You can ask your doubts anytime. Our top creators and mentors are here to support you and provide personalized career guidance" },
+        { question: "Why are you charging only ₹700?", answer: "Great question! Similar programs in the market charge 20K to ₹1L with unrealistic promises of 100% job placement. We aim to make quality tech education accessible to everyone. For ₹700, you'll get: 24/7 course access on our app and website. Career guidance from experts. The best value you've ever experienced in tech learning" },
+        { question: "Are these courses recorded?", answer: "Yes, all courses are recorded so you can watch them anytime, anywhere. Plus, you'll get 24/7 support and live career guidance to help you land your dream job." },
+        { question: "Will I get a certificate?", answer: "Yes! Upon completion, you'll receive an industry-standard, Linkedin-shareable certificate for courses, hackathons, workshops, and tech meetups." },
     ];
 
     return (
@@ -50,11 +51,11 @@ const Aboutus = () => {
                         </div>
                         <div className="grid grid-cols-1 xl:grid-cols-2 gap-9 items-center">
                             <div className="grid xl:grid-cols-1 md:grid-cols-2 gap-5 xl:gap-8">
-                                <div className=" flex justify-center">
-                                    <img src={sathish} alt="" />
+                                <div className=" flex justify-center ">
+                                    <img src={sathish} alt="" className="w-full rounded-lg"/>
                                 </div>
-                                <div className=" flex justify-center">
-                                    <img src={lecture} alt="" />
+                                <div className=" flex justify-center ">
+                                    <img src={raghav} alt=""  className="max-h-[250px] sm:max-h-[280px] w-full rounded-lg"/>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-6 ">
@@ -96,9 +97,9 @@ const Aboutus = () => {
                         </div>
                         <div className="flex flex-col items-center gap-6">
                             <p className="font-inter font-medium text-[22px] sm:text-[25px]  lg:text-[28px] leading-[100%] tracking-[0%] text-center">Everything and anything can be learned if we invest time and effort.</p>
-                            <div className='flex justify-center items-center text-[#ffff] w-[150px] h-[40px] rounded-[8px]  bg-[radial-gradient(99.88%_99.88%_at_53.29%_100.71%,_#6D6100_0%,_#000000_100%)] border border-[#B6AC00]'>
-                                <a href="" className='font-gordita font-medium text-[16px] leading-[100%] tracking-[0%] align-middle'>Join Now</a>
-                            </div>
+                            <a href="https://www.expertisoracademy.in/courses/MasterTech-1-Year-Mentorship-Program-1735308892432-676eb65c9f0f402d2004afae" className='flex justify-center items-center text-[#ffff] w-[150px] h-[40px] rounded-[8px]  bg-[radial-gradient(99.88%_99.88%_at_53.29%_100.71%,_#6D6100_0%,_#000000_100%)] border border-[#B6AC00] cursor-pointer'>
+                                <p  className='font-gordita font-medium text-[16px] leading-[100%] tracking-[0%] align-middle'>Join Now</p>
+                            </a>
                         </div>
                         <div className="hidden md:flex justify-center sm:justify-end">
                             <img src={exper} alt="" />
