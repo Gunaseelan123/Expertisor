@@ -1,22 +1,20 @@
 import React, { useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import { useEffect } from "react";
-import nextIcon from "../assets/next.png";
-import prevIcon from "../assets/previous.png";
 import pannel from "../assets/pannel.png"
 import Buttons from "./Buttons";
 import two2 from "../assets/numbers/two2.png"
-import { FaChevronLeft,FaChevronRight } from "react-icons/fa"
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 
 const Section3 = () => {
   const videos = [
-    { id: 1, url: "https://www.youtube.com/embed/sh-oVBhdKfw", thumbnail: "https://img.youtube.com/vi/sh-oVBhdKfw/maxresdefault.jpg",course:"Full Stack Development" },
-    { id: 2, url: "https://www.youtube.com/embed/GKPxr9vA0eY", thumbnail: "https://img.youtube.com/vi/l37o8odjSD4/maxresdefault.jpg",course:"AWS" },
-    { id: 3, url: "https://www.youtube.com/embed/aYjtkMv7Iuw", thumbnail: "https://img.youtube.com/vi/aYjtkMv7Iuw/maxresdefault.jpg",course:"Linux Admin" },
-    { id: 4, url: "https://www.youtube.com/embed/szgkqIlkMGA ", thumbnail: "https://img.youtube.com/vi/szgkqIlkMGA/maxresdefault.jpg",course:"VMware vSphere" }
+    { id: 1, url: "https://www.youtube.com/embed/sh-oVBhdKfw", thumbnail: "https://img.youtube.com/vi/sh-oVBhdKfw/mqdefault.jpg", course: "Full Stack Development" },
+    { id: 2, url: "https://www.youtube.com/embed/GKPxr9vA0eY", thumbnail: "https://img.youtube.com/vi/GKPxr9vA0eY/mqdefault.jpg", course: "AWS" },
+    { id: 3, url: "https://www.youtube.com/embed/aYjtkMv7Iuw", thumbnail: "https://img.youtube.com/vi/aYjtkMv7Iuw/mqdefault.jpg", course: "Linux Admin" },
+    { id: 4, url: "https://www.youtube.com/embed/szgkqIlkMGA ", thumbnail: "https://img.youtube.com/vi/szgkqIlkMGA/maxresdefault.jpg", course: "VMware vSphere" }
   ];
-  
-  
+
+
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [playingVideo, setPlayingVideo] = useState(null);
@@ -83,10 +81,10 @@ const Section3 = () => {
             <h2 className="font-gordita font-medium text-[24px] leading-[32px] tracking-[0%]">Courses to Build Your Dream Career!</h2>
             <div className="flex gap-3 ">
               <button onClick={prevSlide} disabled={currentIndex === 0} className="disabled:opacity-50">
-                <FaChevronLeft className="h-10 w-5"/>
+                <FaChevronLeft className="h-10 w-5" />
               </button>
               <button onClick={nextSlide} disabled={currentIndex + itemPage >= videos.length} className="disabled:opacity-50 ">
-                <FaChevronRight className="h-10 w-5"/>
+                <FaChevronRight className="h-10 w-5" />
               </button>
             </div>
           </div>

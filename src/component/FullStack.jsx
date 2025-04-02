@@ -18,7 +18,6 @@ const FullStack = () => {
                         </p>
                     </div>
                     <Buttons />
-
                 </div>
                 <div className=' mt-7 sm:mt-8'>
                     <img width={"100%"} src={tamil} alt="" />
@@ -33,5 +32,6 @@ const FullStack = () => {
         </section>
     )
 }
+
 
 export default FullStack

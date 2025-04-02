@@ -86,7 +86,7 @@ const Infinite = () => {
             name: "Sam",
             course: "Full stack developer",
         },
-        
+
         {
             para: "I am a fresher. And I didn't had idea about how Zoho's testing process and the topics they will be covering. So this video gave an idea about the same and it helped me to prepare accordingly.",
             name: "Angeline",
@@ -135,7 +135,7 @@ const Infinite = () => {
             <div>
                 <Marquee speed={80} pauseOnHover >
                     {datas.map((value, index) => (
-                       <Reviews key={index} value={value}/>
+                        <Reviews key={index} value={value} />
                     ))}
                 </Marquee>
             </div>

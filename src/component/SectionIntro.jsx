@@ -45,10 +45,11 @@ const SectionIntro = () => {
                             <span className='md:block'> Paying IT Career?</span>
                         </h1>
 
-                        <p className="  mt-3 mb-5 sm:mb-0 sm:mt-4 font-inter font-normal text-[16px] sm:text-[24px] leading-snug tracking-normal text-center ">1-Year Program with directly from Tamil Nadu's top tech creators mentors!</p>
+                        <p className="  mt-3 mb-5 sm:mb-0 sm:mt-4 font-inter font-normal text-[16px] sm:text-[24px] leading-snug tracking-normal text-center ">Learn Directly from Tamil Nadu's Top Tech Creators & Mentors!
+                        </p>
 
                         <div className=' hidden sm:flex justify-center gap-4 mt-8 mb-10 lg:mb-14'>
-                            <a href="https://www.expertisoracademy.in/courses/MasterTech-1-Year-Mentorship-Program-1735308892432-676eb65c9f0f402d2004afae" className='flex justify-center cursor-pointer'>
+                            <a  href="https://www.expertisoracademy.in/courses/MasterTech-Creator-Mentorship-Program-67ec2a9a57589948c89aa275 " className='flex justify-center cursor-pointer'>
                                 <div className='flex justify-center items-center  w-[171px] h-[56px] rounded-[8px]  bg-[radial-gradient(99.88%_99.88%_at_53.29%_100.71%,_#6D6100_0%,_#000000_100%)] border border-[#B6AC00]'>
                                     <div className="flex gap-3 items-center">
                                         <p className='font-inter font-semibold text-[16px] text-[#FFF201] leading-[100%] tracking-[0%] align-middle'>Join Now</p>
@@ -57,7 +58,7 @@ const SectionIntro = () => {
                                 </div>
                             </a>
 
-                            <a href="" className='flex justify-center cursor-pointer'>
+                            <a href="/Broucher.pdf" download className='flex justify-center cursor-pointer'>
                                 <div className='mt-4 sm:mt-0 flex justify-center items-center border rounded-[4px] border-[#B6AC00] bg-[#FFF761] w-[246px] h-[56px]'>
                                     <div className="flex gap-3 items-center">
                                         <p  className='font-inter font-semibold text-black  text-[16px] leading-[100%] tracking-[0%] align-middle'>Download Brochure</p>
@@ -70,7 +71,6 @@ const SectionIntro = () => {
 
                     <div className="relative xl:mx-[200px]">
                         <div className="relative w-full pb-[53.25%] sm:pb-[48.25%] h-0 border-[10px] sm:border-[14px]  rounded-[36px] border-[#ffff]">
-
 
                             {playing !== 1 ? (
                                 <div className="absolute inset-0 cursor-pointer" onClick={() => setPlaying(1)}>
@@ -90,23 +90,28 @@ const SectionIntro = () => {
                         </div>
                     </div>
 
+
+
                     <div className=' block sm:hidden justify-center gap-4 mt-12 '>
-                        <div className='flex justify-center '>
+
+                        <a href="https://www.expertisoracademy.in/courses/MasterTech-Creator-Mentorship-Program-67ec2a9a57589948c89aa275 " className='flex justify-center cursor-pointer'>
                             <div className='flex justify-center items-center  w-[335px] h-[48px] rounded-[8px]  bg-[radial-gradient(99.88%_99.88%_at_53.29%_100.71%,_#6D6100_0%,_#000000_100%)] border border-[#B6AC00]'>
                                 <div className="flex gap-3 items-center">
-                                    <a href="" className='font-inter font-semibold text-[14px] text-[#FFF201] leading-[100%] tracking-[0%] align-middle'>Join Now</a>
+                                    <p className='font-inter font-semibold text-[14px] text-[#FFF201] leading-[100%] tracking-[0%] align-middle'>Join Now</p>
                                     <img src={right_arrow} alt="" />
                                 </div>
                             </div>
-                        </div>
-                        <div className='flex justify-center'>
+                        </a>
+
+                        <a href="/Broucher.pdf" download className='flex justify-center cursor-pointer'>
                             <div className='mt-4 sm:mt-0 flex justify-center items-center border rounded-[4px] border-[#B6AC00] bg-[#FFF761] w-[335px] h-[48px]'>
                                 <div className="flex gap-3 items-center">
-                                    <a href="" className='font-inter font-semibold text-black  text-[14px] leading-[100%] tracking-[0%] align-middle'>Download Brochure</a>
+                                    <p  className='font-inter font-semibold text-black  text-[14px] leading-[100%] tracking-[0%] align-middle'>Download Brochure</p>
                                     <img src={download} alt="" />
                                 </div>
                             </div>
-                        </div>
+                        </a>
+
                     </div>
 
                 </div>

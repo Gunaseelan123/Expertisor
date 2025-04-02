@@ -21,5 +21,56 @@
   <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+
+      function redirectPage() {
+  
+          // Get the current URL's query string
+  
+          const queryString = window.location.search;
+  
+          const urlParams = new URLSearchParams(queryString);
+  
+  
+          // Initialize UTM query parameters
+  
+          let utmParamQueryString = '';
+  
+          const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_placement'];
+  
+  
+  
+          // Loop through the UTM parameters to check and append them
+  
+          utmParams.forEach(param => {
+  
+              const value = urlParams.get(param);
+  
+              if (value) {
+  
+                  utmParamQueryString += &${param}=${encodeURIComponent(value)};
+  
+              }
+  
+          });
+  
+
+  
+          // Trim leading '&' and add '?' at the start if parameters exist
+  
+          if (utmParamQueryString.length > 0) {
+  
+              utmParamQueryString = '?' + utmParamQueryString.substring(1);
+  
+          }
+  
+
+          // Redirect to the target URL with the UTM parameters
+  
+          window.location.href = `https://www.expertisoracademy.in/courses/MasterTech-Creator-Mentorship-Program-67ec2a9a57589948c89aa275${utmParamQueryString}`;
+  
+      }
+  
+  </script>
   </body>
 </html>

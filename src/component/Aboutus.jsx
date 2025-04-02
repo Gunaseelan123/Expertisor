@@ -1,6 +1,5 @@
 import React from 'react'
 import sathish from "../assets/sathish.png"
-import lecture from "../assets/lecture.png"
 import Q from "../assets/Q.png"
 import good from "../assets/good.png"
 import exper from "../assets/exper.png"
@@ -22,7 +21,7 @@ const Aboutus = () => {
     const [images, setImages] = useState(false)
 
 
-    const [visibleIndex, setVisibleIndex] = useState(null); 
+    const [visibleIndex, setVisibleIndex] = useState(null);
     const show = images ? remove : add
 
 
@@ -52,10 +51,10 @@ const Aboutus = () => {
                         <div className="grid grid-cols-1 xl:grid-cols-2 gap-9 items-center">
                             <div className="grid xl:grid-cols-1 md:grid-cols-2 gap-5 xl:gap-8">
                                 <div className=" flex justify-center ">
-                                    <img src={sathish} alt="" className="w-full rounded-lg"/>
+                                    <img src={sathish} alt="" className="w-full rounded-lg" />
                                 </div>
                                 <div className=" flex justify-center ">
-                                    <img src={raghav} alt=""  className="max-h-[250px] sm:max-h-[280px] w-full rounded-lg"/>
+                                    <img src={raghav} alt="" className="max-h-[250px] sm:max-h-[280px] w-full rounded-lg" />
                                 </div>
                             </div>
                             <div className="flex flex-col gap-6 ">
@@ -76,7 +75,7 @@ const Aboutus = () => {
                             <p className="text-[14px] sm:text-[16px] leading-tight font-inter">Overcome Every Challenge and Start Your Tech Journey with Confidence</p>
                         </div>
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-3">
-                            {query.map((data,index) => (
+                            {query.map((data, index) => (
                                 <div key={index} className="flex items-center h-16  gap-2 col-span-1 bg-[#141300] p-[16px] border border-[#494900]">
                                     <img src={Q} alt="" />
                                     <p>{data}</p>
@@ -97,8 +96,8 @@ const Aboutus = () => {
                         </div>
                         <div className="flex flex-col items-center gap-6">
                             <p className="font-inter font-medium text-[22px] sm:text-[25px]  lg:text-[28px] leading-[100%] tracking-[0%] text-center">Everything and anything can be learned if we invest time and effort.</p>
-                            <a href="https://www.expertisoracademy.in/courses/MasterTech-1-Year-Mentorship-Program-1735308892432-676eb65c9f0f402d2004afae" className='flex justify-center items-center text-[#ffff] w-[150px] h-[40px] rounded-[8px]  bg-[radial-gradient(99.88%_99.88%_at_53.29%_100.71%,_#6D6100_0%,_#000000_100%)] border border-[#B6AC00] cursor-pointer'>
-                                <p  className='font-gordita font-medium text-[16px] leading-[100%] tracking-[0%] align-middle'>Join Now</p>
+                            <a href="https://www.expertisoracademy.in/courses/MasterTech-Creator-Mentorship-Program-67ec2a9a57589948c89aa275 " className='flex justify-center items-center text-[#ffff] w-[150px] h-[40px] rounded-[8px]  bg-[radial-gradient(99.88%_99.88%_at_53.29%_100.71%,_#6D6100_0%,_#000000_100%)] border border-[#B6AC00] cursor-pointer'>
+                                <p className='font-gordita font-medium text-[16px] leading-[100%] tracking-[0%] align-middle'>Join Now</p>
                             </a>
                         </div>
                         <div className="hidden md:flex justify-center sm:justify-end">
@@ -115,19 +114,18 @@ const Aboutus = () => {
                     <div>
                         <div className="flex flex-col gap-5">
                             {faqs.map((faq, index) => (
-                                <div key={index} className="flex justify-between bg-[#141300] border border-[#494900] p-5">
+                                <div onClick={() => toggleParagraph(index)} key={index} className="flex justify-between bg-[#141300] border border-[#494900] p-5 cursor-pointer">
                                     <div>
                                         <h4>{faq.question}</h4>
                                         {visibleIndex === index && (
                                             <p className="mt-3">{faq.answer}</p>
                                         )}
                                     </div>
-                                            <img
-                                                src={visibleIndex === index ? remove : add }
-                                                alt="Toggle"
-                                                onClick={() => toggleParagraph(index)}
-                                                className="cursor-pointer w-6 h-6"
-                                            />
+                                    <img
+                                        src={visibleIndex === index ? remove : add}
+                                        alt="Toggle"
+                                        className="cursor-pointer w-6 h-6"
+                                    />
                                 </div>
                             ))}
                         </div>

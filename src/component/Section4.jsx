@@ -3,7 +3,6 @@ import career from "../assets/career.png"
 import Guide from './Guide'
 import Infinite from './Infinite'
 import three3 from "../assets/numbers/three3.png"
-import Buttons from './Buttons'
 
 const Section4 = () => {
 
@@ -42,18 +41,18 @@ const Section4 = () => {
                                 </div>
                             </div>
                             <div className='sm:flex justify-center xl:justify-start gap-4 mt-2 xl:mt-5'>
-                                <a href="https://www.expertisoracademy.in/courses/MasterTech-1-Year-Mentorship-Program-1735308892432-676eb65c9f0f402d2004afae" className='flex justify-center'>
+                                <a  href="https://www.expertisoracademy.in/courses/MasterTech-Creator-Mentorship-Program-67ec2a9a57589948c89aa275 " className='flex justify-center'>
                                     <div className='flex justify-center items-center border rounded-[4px] border-[#B6AC00] bg-[#FFF761] w-[335px] sm:w-[251px] h-[40px]'>
-                                        <p  className='font-inter font-semibold text-black  text-[16px] leading-[100%] tracking-[0%] align-middle'>Join Now</p>
+                                        <p className='font-inter font-semibold text-black  text-[16px] leading-[100%] tracking-[0%] align-middle'>Join Now</p>
                                     </div>
                                 </a>
-                                <a href="" className='flex justify-center mt-4 sm:mt-0'>
+
+                                <a href="/Broucher.pdf" download className='flex justify-center mt-4 sm:mt-0'>
                                     <div className='flex justify-center items-center text-[#ffff] w-[335px] sm:w-[247px] h-[40px] rounded-[8px]  bg-[radial-gradient(99.88%_99.88%_at_53.29%_100.71%,_#6D6100_0%,_#000000_100%)] border border-[#B6AC00]'>
                                         <p className='font-inter font-semibold text-[16px] leading-[100%] tracking-[0%] align-middle'>Download Brochure</p>
                                     </div>
                                 </a>
                             </div>
-                            {/* <Buttons/> */}
                         </div>
                     </div>
                     <div className='  mt-8'>

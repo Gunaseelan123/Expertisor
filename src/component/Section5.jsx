@@ -3,7 +3,7 @@ import ImgRun from './ImgRun'
 import Union from "../assets/Union.png"
 import six6 from "../assets/numbers/six6.png"
 
-import {imges} from "../assets/Meetup" 
+import { imges } from "../assets/Meetup"
 
 const slide1 = [
     imges.a,
@@ -29,7 +29,6 @@ const slide2 = [
     imges.r,
     imges.s,
     imges.t,
-
 ]
 
 
@@ -47,8 +46,8 @@ const Section5 = () => {
                         </div>
                     </div>
                     <div className=''>
-                        <ImgRun datas={slide1} dirc="right" speed="60" m="mb-5" h="h-[200px] sm:h-[247px]"/>
-                        <ImgRun datas={slide2} dirc="left" speed="60" m="mb-0" h="h-[200px] sm:h-[247px]"/>
+                        <ImgRun datas={slide1} dirc="right" speed="60" m="mb-5" h="h-[200px] sm:h-[247px]" />
+                        <ImgRun datas={slide2} dirc="left" speed="60" m="mb-0" h="h-[200px] sm:h-[247px]" />
                     </div>
                 </div>
             </div>

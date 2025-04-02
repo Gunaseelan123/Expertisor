@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import img1 from "../assets/img1.png"
 import swi1 from '../assets/swi/swi1.jpeg'
 import swi2 from '../assets/swi/swi2.jpeg'
 import swi3 from '../assets/swi/swi3.jpeg'
